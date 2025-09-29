@@ -28,3 +28,80 @@ fetch("data.txt")
 fetch("data.json")
   .then((res) => res.json())
   .then((data) => console.log(data));
+
+const myHeaders = new Headers();
+
+const init = {
+  method: "GET",
+  headers: myHeaders,
+  mode: "cors",
+  cache: "default",
+};
+
+//fetch("data.json", init).then((res) => console.log(res));
+
+//-----------
+//CRUD
+// Create (POST)
+// Read (GET)
+//Update (PUT)
+//Delete (DELETE)
+const toPost = {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    pseudo: "From Scratch",
+    message: "Comment ça va ?",
+  }),
+  mode: "cors",
+  credentials: "same-origin",
+};
+
+document.querySelector("form").addEventListener("submit", () => {
+  fetch("http://localhost:3000/posts", toPost).then(() =>
+    console.log("data envoyée")
+  );
+});
+
+const toDelete = {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  mode: "cors",
+  credentials: "same-origin",
+};
+
+btnDelete.addEventListener("click", () => {
+  fetch("http://localhost:3000/posts/42ae", toDelete).then(() =>
+    console.log("Data supprimé")
+  );
+});
+
+//------------
+// Asynchrone
+//------------
+setTimeout(() => {
+  console.log("test");
+}, 2000);
+
+// promise - Ne sera executé qu'à l'issue de la réponse du fetch
+//fetch("monlien").then((res) => res);
+
+// async / await
+async function fetchData() {
+  await fetch("monlien");
+  //attend que le await soit exécuté avant de faire la suite
+
+  executeFunction();
+}
+
+//La même chose en fonction anonyme
+const fetchData2 = async () => {
+  await fetch("monlien");
+  //attend que le await soit exécuté avant de faire la suite
+
+  executeFunction();
+};

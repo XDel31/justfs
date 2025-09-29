@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": "10f8",
+      "pseudo": "From Scratch",
+      "message": "Yo les gens !"
+    },
+    {
+      "id": "2c60",
+      "pseudo": "From Scratch",
+      "message": "Comment ça va ?"
+    },
+    {
+      "id": "42ae",
+      "pseudo": "From Scratch",
+      "message": "Comment ça va ?"
+    }
+  ]
+}
