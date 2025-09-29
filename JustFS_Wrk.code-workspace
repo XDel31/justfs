@@ -1,0 +1,84 @@
+{
+  "folders": [
+    {
+      "name": "1-cours-html",
+      "path": "1-cours-html"
+    },
+    {
+      "name": "1-html-tp1-tableaux-complexe",
+      "path": "1-html-tp1-tableaux-complexe"
+    },
+    {
+      "name": "1-html-tp2-integrer-maquette-simple",
+      "path": "1-html-tp2-integrer-maquette-simple"
+    },
+    {
+      "name": "1-html-tp3-integrer-maquette-professionnelle",
+      "path": "1-html-tp3-integrer-maquette-professionnelle"
+    },
+    {
+      "name": "2-cours-css-1",
+      "path": "2-cours-css-1"
+    },
+    {
+      "path": "2-cours-css-2"
+    },
+    {
+      "path": "2-cours-css-tp1-intégration-helium"
+    },
+    {
+      "path": "3-cours-github"
+    },
+    {
+      "path": "4-cours-seo"
+    },
+    {
+      "path": "5-cours-saas"
+    },
+    {
+      "path": "5-projet3-integration-la-montagne"
+    },
+    {
+      "path": "6-cours-javascript-1"
+    },
+    {
+      "path": "6-cours-javascript-2-DOM"
+    },
+    {
+      "path": "6-cours-javascript-2-synthese-generateur-de-bulles"
+    },
+    {
+      "path": "6-cours-javascript-2-tp1-mouse-effect"
+    },
+    {
+      "path": "6-cours-javascript-2-tp2-scroll-navbar"
+    },
+    {
+      "path": "6-cours-javascript-2-tp3-scroll-popup"
+    },
+    {
+      "path": "6-cours-javascript-2-tp4-sidebar"
+    },
+    {
+      "path": "6-cours-javascript-3-la-data"
+    },
+    {
+      "path": "6-cours-javascript-3-tp5-color-generator"
+    },
+    {
+      "path": "6-cours-javascript-3-tp6-todo-list"
+    },
+    {
+      "path": "6-cours-javascript-3-tp7-compte-a-rebour"
+    },
+    {
+      "path": "6-cours-javascript-3-tp8-date-calculator"
+    },
+    {
+      "path": "6-cours-javascript-4-les-api"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "6-cours-javascript-4-les-api"
+  }
+}

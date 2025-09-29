@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="pseudo-container">
+        <label for="pseudo">Pseudo</label>
+        <input type="text" autocomplete="off" id="pseudo" />
+        <span></span>
+      </div>
+      <div class="email-container">
+        <label for="email">E-Mail</label>
+        <input type="text" autocomplete="off" id="email" />
+        <span></span>
+      </div>
+      <div class="password-container">
+        <label for="password">Mot de passe</label>
+        <input type="password" autocomplete="off" id="password" />
+        <p id="progress-bar"></p>
+        <span></span>
+      </div>
+      <div class="confirmP-container">
+        <label for="confirmP">Confirmer le mot de passe</label>
+        <input type="password" autocomplete="off" id="confirmP" />
+        <span></span>
+      </div>
+      <input type="submit" value="Valider" />
+    </form>
+  </body>
+  <script src="./index.js"></script>
+</html>
