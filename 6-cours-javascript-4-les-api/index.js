@@ -21,6 +21,7 @@ fetch("monUrl")
   })
   .catch((err) => console.log(err));
 */
+/*
 fetch("data.txt")
   .then((res) => res.text())
   .then((data) => console.log(data));
@@ -37,6 +38,7 @@ const init = {
   mode: "cors",
   cache: "default",
 };
+*/
 
 //fetch("data.json", init).then((res) => console.log(res));
 
@@ -83,10 +85,11 @@ btnDelete.addEventListener("click", () => {
 //------------
 // Asynchrone
 //------------
+/*
 setTimeout(() => {
   console.log("test");
 }, 2000);
-
+*/
 // promise - Ne sera executé qu'à l'issue de la réponse du fetch
 //fetch("monlien").then((res) => res);
 
@@ -105,3 +108,63 @@ const fetchData2 = async () => {
 
   executeFunction();
 };
+
+//------------
+// JSON
+//------------
+/*
+//Méthode .json() qui s'auto-résout en renvoyant le body de la requête
+fetch("data.json")
+  .then((res) => res.json())
+  .then((data) => {
+    //Stringify => convertit en JSON
+    let settings = JSON.stringify(data);
+    console.log(settings);
+    //Parse => transform json en objet js
+    console.log(JSON.parse(settings));
+  });
+  */
+
+//------------
+// Web API
+//------------
+
+// CLIENT STORAGE
+//---------------
+/*
+// Local Storage
+//---------------
+// Cookies 4 ko - local storage 10 Mo
+localStorage.data = "Je stock la data";
+
+//récuperation
+console.log(localStorage.getItem("data"));
+console.log(localStorage.data);
+
+//suppression
+localStorage.clear("data");
+
+const obj = {
+  name: "Denis",
+  age: 22,
+};
+
+localStorage.user = JSON.stringify(obj);
+
+console.log(JSON.parse(localStorage.user));
+*/
+
+// Session Storage
+//---------------
+/*
+sessionStorage.dataSettings = "55px";
+console.log(sessionStorage.dataSettings);
+sessionStorage.clear("dataSettings");
+*/
+
+// Cookies
+//---------------
+document.cookie = "userName=FromScratch";
+
+//Bonne pratique
+document.cookie = "pseudo=FS;path=/;max-age=4500000;secure";

@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.filter-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+input {
+  margin: 20px auto;
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  transition: 0.2s;
+}
+input:focus {
+  border-radius: 30px;
+  background: rgb(238, 238, 238);
+}
+.range-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input[type="range"] {
+  width: 250px;
+  margin: 0 10px 10px 0;
+}
+.range-container span {
+  font-size: 1.2rem;
+  transform: translateY(-3px);
+}
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.card {
+  flex: 1 0 20%;
+  min-width: 260px;
+  background: rgb(17, 17, 17);
+  margin: 5px;
+  color: rgb(245, 245, 245);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h2 {
+  margin: 6px 0;
+  color: rgb(245, 245, 245);
+}
+h4 {
+  margin: 6px 0;
+  color: rgb(245, 245, 245);
+}
+p {
+  color: rgb(245, 245, 245);
+}
+img {
+  width: 150px;
+  height: 100px;
+  margin: 10px 0;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.304);
+}
