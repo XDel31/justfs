@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAI;IACF,OAAO,GAAG;AACZ,EAAE,OAAO,OAAO;IACd,QAAQ,GAAG,CAAC;AACd","sources":["index.js"],"sourcesContent":["try {\r\n  addNum(6, 19);\r\n} catch (error) {\r\n  console.log(error);\r\n}\r\n"],"names":[],"version":3,"file":"test-js.c36f364e.js.map","sourceRoot":"/__parcel_source_root/"}

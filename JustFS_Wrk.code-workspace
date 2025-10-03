@@ -76,9 +76,27 @@
     },
     {
       "path": "6-cours-javascript-4-les-api"
+    },
+    {
+      "path": "6-cours-javascript-4-tp9-country-app"
+    },
+    {
+      "path": "6-cours-javascript-5-la-poo"
+    },
+    {
+      "path": "6-cours-javascript-5-tp10-quizz-app"
+    },
+    {
+      "path": "6-cours-javascript-6-suite-et-fin"
+    },
+    {
+      "path": "6-cours-javascript-6-tp11-flappy-bird"
+    },
+    {
+      "path": "6-cours-javascript-6-typescript"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "6-cours-javascript-4-les-api"
+    "liveServer.settings.multiRootWorkspaceName": "6-cours-javascript-6-typescript"
   }
 }
