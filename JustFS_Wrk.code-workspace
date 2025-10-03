@@ -94,9 +94,12 @@
     },
     {
       "path": "6-cours-javascript-6-typescript"
+    },
+    {
+      "path": "7-cours-react"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "6-cours-javascript-6-typescript"
+    "liveServer.settings.multiRootWorkspaceName": "6-cours-javascript-5-la-poo"
   }
 }
