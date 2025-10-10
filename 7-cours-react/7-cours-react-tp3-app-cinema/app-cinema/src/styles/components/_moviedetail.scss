@@ -1,0 +1,55 @@
+.moviedetail-container {
+  display: flex;
+  flex-direction: column;
+  background: $color-card;
+  margin: 20px 5px 20px 5px;
+  min-width: 270px;
+  height: 600px;
+  color: $color-font;
+  border-radius: 20px;
+  padding-bottom: 10px;
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    margin: 0px 0px 0px 10px;
+    padding: 0;
+    line-height: 1.2;
+  }
+
+  p {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    color: #50535a;
+    text-align: left;
+    line-height: 1.1;
+  }
+
+  .overview {
+    overflow: hidden;
+  }
+}
+
+#favoris {
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: auto;
+  padding: 5px;
+  white-space: nowrap;
+  font-size: 1.5rem;
+}
+
+img {
+  border-radius: 50px;
+  margin: 20px 0px 20px 0px;
+  width: 200px;
+  box-shadow: 0px 5px #2b304b, 0px 10px #131937;
+}

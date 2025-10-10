@@ -1,0 +1,26 @@
+.navigation {
+  min-width: 300px;
+  margin-left: auto;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  a {
+    text-decoration: none;
+    width: 150px;
+  }
+
+  li {
+    color: $color-font;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .nav-active {
+    position: relative;
+    background: $color-button;
+    border-radius: 10px;
+  }
+}

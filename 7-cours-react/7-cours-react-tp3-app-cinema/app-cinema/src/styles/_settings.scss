@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "fDongleLight";
+  src: url(../assets/fonts/Dongle-Light.ttf);
+}
+@font-face {
+  font-family: "fDongleRegular";
+  src: url(../assets/fonts/Dongle-Regular.ttf);
+}
+
+$fDongleLight: "fDongleLight", sans-serif;
+$fDongleRegular: "fDongleRegular", sans-serif;
+
+$color-back: #212040;
+$color-button: #546fe4;
+$color-card: #060d2b;
+$color-font: rgb(243, 243, 243);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-back;
+  font-family: $fDongleLight;
+  font-size: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  color: $color-font;
+  background: $color-button;
+  box-shadow: none;
+  border: 0;
+  cursor: pointer;
+  font-family: $fDongleRegular;
+}

@@ -1,0 +1,32 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 30px;
+
+  .navigation {
+    margin-right: auto;
+  }
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: $color-font;
+  text-shadow: $color-button 3px 3px;
+}
+
+.favorites-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .movies-detail {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 16px;
+  }
+}

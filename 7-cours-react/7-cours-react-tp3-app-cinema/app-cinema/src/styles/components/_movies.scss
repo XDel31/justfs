@@ -1,0 +1,57 @@
+.movies-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+    height: 80px;
+
+    #searchForm {
+      display: flex;
+      flex-direction: column;
+      height: 70px;
+    }
+
+    input,
+    button {
+      height: 50%;
+    }
+
+    input {
+      border-radius: 10px 10px 0px 0px;
+      text-align: center;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      border-radius: 0px 0px 10px 10px;
+      font-size: 1.5rem;
+    }
+  }
+  .sort-container {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 5px;
+    width: 220px;
+    height: 25px;
+    background: $color-button;
+    border-radius: 10px 10px 10px 10px;
+
+    button {
+      font-size: 1.2rem;
+    }
+  }
+
+  .movies-detail {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 16px;
+  }
+}

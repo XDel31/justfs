@@ -1,8 +1,0 @@
-Prérequis : 
-Nodejs : à partir du site web https://nodejs.org/fr/download 
-Une fois installé à partir de la console de VSC (node -v) doit retourner la version de nodejs
-npm : Nodejs installe égalemment npm qui est un packager qui permet de faire le build des projets (npm -v dans la console pour connaitre la version)  
-
-
-1 - Dans le répertoire du projet à partir de la console tapez : npx create-react-app <nomDuProjet>
-2 - Installer sass et react-router-dom : npm i -g react-router-dom sass

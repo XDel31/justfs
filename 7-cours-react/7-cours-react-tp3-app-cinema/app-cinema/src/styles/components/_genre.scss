@@ -1,0 +1,12 @@
+.genre-container {
+  display: flex;
+  font-size: 1.1rem;
+  margin-left: 10px;
+
+  span {
+    margin: 5px 5px 5px 0px;
+    padding: 0 5px 0 5px;
+    border-radius: 10px;
+    background: $color-back;
+  }
+}
