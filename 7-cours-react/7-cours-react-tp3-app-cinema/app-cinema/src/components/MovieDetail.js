@@ -20,6 +20,16 @@ const MovieDetail = ({ parent, movie, genres, onMovieRemoved }) => {
     }
   }, [parent, movie]);
 
+  function dateFormater(date) {
+    let newDate = new Date(date).toLocaleDateString("fr-FR", {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+    });
+
+    return newDate;
+  }
+
   function toggleFavorites() {
     let tmdbFavorites = [];
     let strFavorites = "";
@@ -49,13 +59,15 @@ const MovieDetail = ({ parent, movie, genres, onMovieRemoved }) => {
         src={
           movie.poster_path !== "" && movie.poster_path !== null
             ? `https://image.tmdb.org/t/p/original/${movie.poster_path}`
-            : "poster.jpg"
+            : "./img/poster.jpg"
         }
-        alt={movie.title}
+        alt={"Affiche : " + movie.title}
       />
       <h5>{movie.title}</h5>
-      <p>Sorti le : {movie.release_date}</p>
-      <h5>{Number(movie.vote_average).toFixed(1)}/10⭐</h5>
+      <p>Sorti le : {dateFormater(movie.release_date)}</p>
+      <h5>
+        {Number(movie.vote_average).toFixed(1)}/10 <span>⭐</span>
+      </h5>
       <div className="movies-genre">
         <Genre genreIds={genreIds} genres={genres} />
       </div>

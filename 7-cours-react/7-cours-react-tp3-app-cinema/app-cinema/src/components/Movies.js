@@ -40,7 +40,7 @@ const Movies = () => {
             type="text"
             id="iptSearch"
             name="iptSearch"
-            placeholder="Votre recherche"
+            placeholder="Entrez le titre d'un film"
           />
           <button id="btnSearch" onClick={() => loadMovies()}>
             Rechercher
@@ -48,8 +48,12 @@ const Movies = () => {
         </form>
       </div>
       <div className="sort-container">
-        <button onClick={() => setIsOrderAsc(true)}>Top ↑</button>
-        <button onClick={() => setIsOrderAsc(false)}>Flop ↓</button>
+        <button id="goodToBad" onClick={() => setIsOrderAsc(true)}>
+          Top ↑
+        </button>
+        <button id="badToGood" onClick={() => setIsOrderAsc(false)}>
+          Flop ↓
+        </button>
       </div>
       <div className="movies-detail">
         {movies

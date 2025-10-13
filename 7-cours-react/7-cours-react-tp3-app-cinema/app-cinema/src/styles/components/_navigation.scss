@@ -8,8 +8,12 @@
   }
 
   a {
+    border-radius: 10px;
     text-decoration: none;
     width: 150px;
+    &:hover {
+      background: $color-hover;
+    }
   }
 
   li {

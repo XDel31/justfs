@@ -32,20 +32,49 @@
     button {
       border-radius: 0px 0px 10px 10px;
       font-size: 1.5rem;
+      &:hover {
+        background: $color-hover;
+      }
     }
   }
+
   .sort-container {
+    margin: 8px auto;
+    width: 220px;
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
 
-    margin: 5px;
-    width: 220px;
-    height: 25px;
-    background: $color-button;
-    border-radius: 10px 10px 10px 10px;
-
-    button {
+    #goodToBad {
+      border-radius: 10px 0 0 10px;
+    }
+    #badToGood {
+      border-radius: 0 10px 10px 0;
+    }
+    #goodToBad,
+    #badToGood {
+      background: $color-button;
+      width: 110px;
+      transition: 0.3s;
+      position: relative;
       font-size: 1.2rem;
+
+      &:hover {
+        background: $color-hover;
+      }
+    }
+    #goodToBad span {
+      transform: translateY(-50%) rotate(-90deg);
+      right: 18px;
+    }
+    #badToGood span {
+      transform: translateY(-50%) rotate(90deg);
+      left: 16px;
+    }
+    #goodToBad span,
+    #badToGood span {
+      position: absolute;
+      top: 50%;
     }
   }
 
