@@ -37,7 +37,7 @@ const HeaderInfos = () => {
             percent={headerData.market_cap_change_percentage_24h_usd}
           />
         </li>
-        <li>
+{/*         <li>
           BTC dominance :{" "}
           {typeof headerData.market_cap_percentage.btc === "number" &&
             !isNaN(headerData.market_cap_percentage.btc) &&
@@ -49,7 +49,7 @@ const HeaderInfos = () => {
             !isNaN(headerData.market_cap_percentage.eth) &&
             headerData.market_cap_percentage.eth.toFixed(1) + "%"}
         </li>
-      </ul>
+ */}      </ul>
       <TableFilters />
     </div>
   );
